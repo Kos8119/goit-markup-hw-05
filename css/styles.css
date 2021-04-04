@@ -8,6 +8,8 @@
   --logo-dark-color: #000000;
   --filter-button-bg-color: #f5f4fa;
   --icon-color: #afb1b8;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
 }
 
 body {
@@ -152,12 +154,20 @@ img {
 .nav-links .current {
   color: var(--accent-color);
 }
-/*.current::after {
-  width: 48px;
+.nav-links > li {
+  position: relative;
+}
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-} */
+}
 .contact-link {
   display: flex;
   align-items: center;
