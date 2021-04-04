@@ -8,8 +8,8 @@
   --logo-dark-color: #000000;
   --filter-button-bg-color: #f5f4fa;
   --icon-color: #afb1b8;
-  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --time: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
 }
 
 body {
@@ -106,6 +106,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+/*ХЭДЕР НАВИГАЦИЯ*/
 .header-nav {
   display: flex;
 }
@@ -126,11 +127,16 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 .nav-links a:hover,
 .nav-links a:focus {
   color: var(--accent-color);
 }
+
+/*ХЭДЕР КОНТАКТЫ*/
 .contacts {
   display: flex;
   margin-top: 0;
@@ -146,6 +152,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 .contacts a:hover,
 .contacts a:focus {
@@ -175,6 +184,10 @@ img {
 .contact-icon {
   margin-right: 10px;
   fill: var(--secondary-text-color);
+  transition-property: color;
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon {
@@ -351,11 +364,17 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--header-bg-color);
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 .soc-link-icon {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .soc-link:hover,
@@ -390,9 +409,15 @@ img {
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 .client-icon {
   fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 .client-card:hover,
 .client-card:focus {
@@ -429,6 +454,9 @@ img {
   text-align: center;
   color: var(--main-text-color);
   background-color: var(--filter-button-bg-color);
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 .filter:hover,
 .filter:focus {
@@ -454,6 +482,9 @@ img {
   margin-top: 30px;
   margin-left: 30px;
   background-color: var(--header-bg-color);
+  transition-property: box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .pf-item:hover,
@@ -504,23 +535,23 @@ img {
 .footer-contacts li:not(:last-child) {
   margin-bottom: 9px;
 }
+.footer-contacts a {
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   color: var(--accent-color);
 }
-.footer-contacts a {
-  font-weight: 400;
-
-  line-height: 1.71;
-
-  color: rgba(255, 255, 255, 0.6);
-}
 
 .footer-adress a {
   font-weight: 400;
-
   line-height: 1.71;
-
   color: var(--header-bg-color);
 }
 .footer-links {
