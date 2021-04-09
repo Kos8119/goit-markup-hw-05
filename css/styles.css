@@ -263,7 +263,6 @@ img {
   margin-right: 30px;
 }
 .peculiar-item {
-  /*outline: 1px solid blueviolet;*/
   display: inline-block;
   text-align: center;
   width: 270px;
@@ -489,7 +488,6 @@ img {
 
 /*КАРТОЧКИ ПОРТФОЛИО*/
 .pf-cards {
-  /*outline: 1px solid blueviolet;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -498,8 +496,6 @@ img {
   margin-left: -30px;
 }
 .pf-cards .pf-item {
-  /*outline: 1px solid tomato;*/
-
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
@@ -539,10 +535,10 @@ img {
   opacity: 0.9;
   color: var(--header-bg-color);
 }
-/*.pf-item:hover .card-overlay {
+.pf-item:hover .card-overlay {
   transform: translateY(0);
-} */
-.pf-item:focus .card-overlay {
+}
+.pf-link:focus .card-overlay {
   transform: translateY(0);
 }
 .pf-card-text {
